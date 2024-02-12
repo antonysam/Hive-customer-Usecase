@@ -64,7 +64,7 @@ Run sqoop in another terminal
 $ sqoop export --connect jdbc:mysql://localhost/cust_reports --table cust_report --username root --password Root123$ -m 1 --driver com.mysql.cj.jdbc.Driver  --export-dir hdfs://localhost:54310/user/hduser/extdata/ --table cust_curated_temp --fields-terminated-by '|' --lines-terminated-by '/n' --driver com.mysql.cj.jdbc.Driver;
 
 
-> select * from cust_reports;
+mysql> select * from cust_reports;
 
 ```
 
