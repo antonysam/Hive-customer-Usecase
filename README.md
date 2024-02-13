@@ -28,7 +28,7 @@ hive> create temporary table cust_raw (id int,age int,profile string)
 > row format delimited by '|'
 > stored as textfile;
 
-loading the data to hive will change the delimiter of the raw file as per the client requirement i.e '|'
+before loading the data to hive, will change the delimiter of the raw file as per the client requirement i.e '|'
 $ cat /home/hduser/hive/data/custs| tr -s ',' '|' > /home/hduser/hive/custs_transf
 
 loading the data into hive from linux landing pad
